@@ -2200,6 +2200,7 @@
   <HelpKINode Title="ComputedPlotWeight method" Url="html/Overload_Rhino_DocObjects_ObjectAttributes_ComputedPlotWeight.htm" />
   <HelpKINode Title="ComputeFaceNormals method" Url="html/M_Rhino_Geometry_Collections_MeshFaceNormalList_ComputeFaceNormals.htm" />
   <HelpKINode Title="ComputeNormals method" Url="html/M_Rhino_Geometry_Collections_MeshVertexNormalList_ComputeNormals.htm" />
+  <HelpKINode Title="ComputerSerialNumber property" Url="html/P_Rhino_Runtime_HostUtils_ComputerSerialNumber.htm" />
   <HelpKINode Title="CON method" Url="html/Overload_Rhino_UI_LOC_CON.htm" />
   <HelpKINode Title="Cone structure">
     <HelpKINode Title="Cone Structure" Url="html/T_Rhino_Geometry_Cone.htm" />
@@ -3098,8 +3099,8 @@
   <HelpKINode Title="DebugString method" Url="html/Overload_Rhino_Runtime_HostUtils_DebugString.htm" />
   <HelpKINode Title="Decal enumeration member" Url="html/T_Rhino_DocObjects_TextureCombineMode.htm" />
   <HelpKINode Title="Decimal enumeration member">
-    <HelpKINode Title="DistanceDisplayMode Enumeration" Url="html/T_Rhino_DocObjects_DistanceDisplayMode.htm" />
     <HelpKINode Title="DistanceDisplayMode Enumeration" Url="html/T_Rhino_UI_DistanceDisplayMode.htm" />
+    <HelpKINode Title="DistanceDisplayMode Enumeration" Url="html/T_Rhino_DocObjects_DistanceDisplayMode.htm" />
   </HelpKINode>
   <HelpKINode Title="Decimeters enumeration member" Url="html/T_Rhino_UnitSystem.htm" />
   <HelpKINode Title="Default enumeration member">
@@ -3706,8 +3707,8 @@
   <HelpKINode Title="Distance method" Url="html/M_Rhino_Geometry_Quaternion_Distance.htm" />
   <HelpKINode Title="DistanceBetweenArrowTips property" Url="html/P_Rhino_Geometry_LinearDimension_DistanceBetweenArrowTips.htm" />
   <HelpKINode Title="DistanceDisplayMode enumeration">
-    <HelpKINode Title="DistanceDisplayMode Enumeration" Url="html/T_Rhino_UI_DistanceDisplayMode.htm" />
     <HelpKINode Title="DistanceDisplayMode Enumeration" Url="html/T_Rhino_DocObjects_DistanceDisplayMode.htm" />
+    <HelpKINode Title="DistanceDisplayMode Enumeration" Url="html/T_Rhino_UI_DistanceDisplayMode.htm" />
   </HelpKINode>
   <HelpKINode Title="DistanceDisplayPrecision property" Url="html/P_Rhino_RhinoDoc_DistanceDisplayPrecision.htm" />
   <HelpKINode Title="DistancePane property">
@@ -6416,6 +6417,7 @@
     <HelpKINode Title="properties" Url="html/Properties_T_Rhino_Runtime_HostUtils.htm" />
   </HelpKINode>
   <HelpKINode Title="HostUtils.CheckForRdk method" Url="html/M_Rhino_Runtime_HostUtils_CheckForRdk.htm" />
+  <HelpKINode Title="HostUtils.ComputerSerialNumber property" Url="html/P_Rhino_Runtime_HostUtils_ComputerSerialNumber.htm" />
   <HelpKINode Title="HostUtils.CreateCommands method" Url="html/Overload_Rhino_Runtime_HostUtils_CreateCommands.htm" />
   <HelpKINode Title="HostUtils.CreatePlugIn method" Url="html/M_Rhino_Runtime_HostUtils_CreatePlugIn.htm" />
   <HelpKINode Title="HostUtils.DebugDumpToString method" Url="html/Overload_Rhino_Runtime_HostUtils_DebugDumpToString.htm" />
