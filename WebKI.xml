@@ -3099,8 +3099,8 @@
   <HelpKINode Title="DebugString method" Url="html/Overload_Rhino_Runtime_HostUtils_DebugString.htm" />
   <HelpKINode Title="Decal enumeration member" Url="html/T_Rhino_DocObjects_TextureCombineMode.htm" />
   <HelpKINode Title="Decimal enumeration member">
-    <HelpKINode Title="DistanceDisplayMode Enumeration" Url="html/T_Rhino_DocObjects_DistanceDisplayMode.htm" />
     <HelpKINode Title="DistanceDisplayMode Enumeration" Url="html/T_Rhino_UI_DistanceDisplayMode.htm" />
+    <HelpKINode Title="DistanceDisplayMode Enumeration" Url="html/T_Rhino_DocObjects_DistanceDisplayMode.htm" />
   </HelpKINode>
   <HelpKINode Title="Decimeters enumeration member" Url="html/T_Rhino_UnitSystem.htm" />
   <HelpKINode Title="Default enumeration member">
