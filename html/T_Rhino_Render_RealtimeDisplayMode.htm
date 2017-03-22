@@ -10,6 +10,8 @@
 								 
 							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_CaptureProgress.htm">CaptureProgress</a></td><td><div class="summary">
             Override to communicate the progress of a capture.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_ComputeViewportCrc.htm">ComputeViewportCrc</a></td><td><div class="summary">
+            Compute viewport CRC for the given ViewInfo
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_CreateWorld.htm">CreateWorld</a></td><td><div class="summary">
             Implement if you need to handle the initial CreateWorld call initiated by the display pipeline system. Note
             that this is not the same as the CreateWorld call in Rhino.Render.ChangeQueue.ChangeQueue, although
@@ -24,6 +26,8 @@
             Get ViewInfo that has been registered with this RealtimeDisplayMode instance.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudAllowEditMaxPasses.htm">HudAllowEditMaxPasses</a></td><td><div class="summary">
             Override to allow maximum pass editing. By default disabled.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudCustomStatusText.htm">HudCustomStatusText</a></td><td><div class="summary">
+            Override to display status of the render engine.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudLastRenderedPass.htm">HudLastRenderedPass</a></td><td><div class="summary">
             Override to communicate the last completed pass. Can be shown in the HUD
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudMaximumPasses.htm">HudMaximumPasses</a></td><td><div class="summary">
@@ -43,15 +47,13 @@
             
             By default these are shown, override this function and
             return false if HUD controls aren't needed.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudShowCustomStatusText.htm">HudShowCustomStatusText</a></td><td><div class="summary">
+            Override to show status text in HUD. By default disabled.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudShowMaxPasses.htm">HudShowMaxPasses</a></td><td><div class="summary">
             Override to show maximum passes in HUD. By default disabled.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudShowPasses.htm">HudShowPasses</a></td><td><div class="summary">
             Override to show current pass in HUD. By default disabled.
-            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudShowStatusText.htm">HudShowStatusText</a></td><td><div class="summary">
-            Override to show status text in HUD. By default disabled.
-            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudStartTime.htm">HudStartTime</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudStatusText.htm">HudStatusText</a></td><td><div class="summary">
-            Override to display status of the render engine.
-            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_IsCompleted.htm">IsCompleted</a></td><td><div class="summary">
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_HudStartTime.htm">HudStartTime</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_IsCompleted.htm">IsCompleted</a></td><td><div class="summary">
             Implement to tell if your render engine has completed a frame for drawing into the viewport
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_IsFrameBufferAvailable.htm">IsFrameBufferAvailable</a></td><td><div class="summary">
             Implement to tell the render pipeline that a framebuffer is ready

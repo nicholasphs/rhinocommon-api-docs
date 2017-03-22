@@ -14,14 +14,18 @@
 								 
 							</th><th>Name</th><th>Description</th></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Rhino_Geometry_Cylinder_Axis.htm">Axis</a></td><td><div class="summary">
             Gets the axis direction of the cylinder.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Rhino_Geometry_Cylinder_BasePlane.htm">BasePlane</a></td><td><div class="summary">
+            Gets or sets the base plane of the cylinder.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Rhino_Geometry_Cylinder_Center.htm">Center</a></td><td><div class="summary">
             Gets the center point of the defining circle.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Rhino_Geometry_Cylinder_Height1.htm">Height1</a></td><td><div class="summary">
-            Gets or sets the start height of the cylinder. 
+            Gets or sets the start height of the cylinder.
+            The center of bottom cap is: BasePlane.Origin + Height1 * BasePlane.ZAxis.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Rhino_Geometry_Cylinder_Height2.htm">Height2</a></td><td><div class="summary">
             Gets or sets the end height of the cylinder. 
             If the end height equals the start height, the cylinder is 
             presumed to be infinite.
+            The center of top cap is: BasePlane.Origin + Height2 * BasePlane.ZAxis.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Rhino_Geometry_Cylinder_IsFinite.htm">IsFinite</a></td><td><div class="summary">
             true if the cylinder is finite (Height0 != Height1)
             false if the cylinder is infinite.
