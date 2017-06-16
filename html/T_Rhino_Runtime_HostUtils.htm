@@ -8,6 +8,15 @@
 								 
 							</th><th>Name</th><th>Description</th></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="P_Rhino_Runtime_HostUtils_ComputerSerialNumber.htm">ComputerSerialNumber</a></td><td><div class="summary">
             Gets the serial number of the computer running Rhino.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="P_Rhino_Runtime_HostUtils_DeviceId.htm">DeviceId</a></td><td><div class="summary">
+            The DeviceId is a unique, stable ID that anonymously identifies the device
+            that Rhino is running on. It is computed based on hardware information that
+            should not change when the OS is upgraded, or if commonly modified hardware
+            are added or removed from the computer. The machine-specific information is
+            hashed using a cryptographic hash to make it anonymous.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="P_Rhino_Runtime_HostUtils_DeviceName.htm">DeviceName</a></td><td><div class="summary">
+            Name of the computer running Rhino. If the computer is part of a 
+            Windows Domain, the computer name has "@[DOMAIN]" appended.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="P_Rhino_Runtime_HostUtils_RunningInMono.htm">RunningInMono</a></td><td><div class="summary">
             Tests if this process is currently executing under the Mono runtime.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="P_Rhino_Runtime_HostUtils_RunningInRhino.htm">RunningInRhino</a></td><td><div class="summary">
@@ -24,7 +33,9 @@
             Gets or sets whether debug messages are printed to the command line.
             </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Methods</span></div><div id="ID4RBSection" class="collapsibleSection"><table class="members" id="methodList"><tr><th class="iconColumn">
 								 
-							</th><th>Name</th><th>Description</th></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Runtime_HostUtils_CallFromCoreRhino.htm">CallFromCoreRhino</a></td><td><div class="summary">
+							</th><th>Name</th><th>Description</th></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Runtime_HostUtils_AutoInstallPlugInFolder.htm">AutoInstallPlugInFolder</a></td><td><div class="summary">
+            Gets the auto install plug-in folder for machine or current user.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Runtime_HostUtils_CallFromCoreRhino.htm">CallFromCoreRhino</a></td><td><div class="summary">
             Don't change this function in ANY way unless you chat with Steve first!
             This function is called by Rhino on initial startup and the signature
             must be exact
@@ -59,6 +70,8 @@
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Runtime_HostUtils_GetAbsolutePath.htm">GetAbsolutePath</a></td><td><div class="summary">
             Call this method to convert a relative path to an absolute path
             relative to the specified path.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Runtime_HostUtils_GetActivePlugInVersionFolders.htm">GetActivePlugInVersionFolders</a></td><td><div class="summary">
+            Recurses through the auto install plug-in folders and returns the directories containing "active" versions of plug-ins.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Runtime_HostUtils_GetAssemblySearchPaths.htm">GetAssemblySearchPaths</a></td><td><div class="summary">
             Returns list of directory names where additional assemblies (plug-ins, DLLs, Grasshopper components)
             may be located
