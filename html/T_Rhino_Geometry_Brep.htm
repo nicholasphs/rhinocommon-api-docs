@@ -89,6 +89,8 @@
             Assigns a parent object and a subobject index to this.
             </div> (Inherited from <a href="T_Rhino_Runtime_CommonObject.htm">CommonObject</a>.)</td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CopyTrimCurves.htm">CopyTrimCurves</a></td><td><div class="summary">
             Copy all trims from a Brep face onto a surface.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateBaseballSphere.htm">CreateBaseballSphere</a></td><td><div class="summary">
+            Creates a brep representation of the sphere with two similar trimmed NURBS surfaces, and no singularities.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateBlendShape.htm">CreateBlendShape</a></td><td><div class="summary">
             Makes a curve blend between points on two surface edges. The blend will be tangent to the surfaces and perpendicular to the edges.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateBlendSurface.htm">CreateBlendSurface</a></td><td><div class="summary">
@@ -121,6 +123,9 @@
             Constructs the contour curves for a brep, using a slicing plane.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="M_Rhino_Geometry_Brep_CreateContourCurves_1.htm">CreateContourCurves(Brep, Point3d, Point3d, Double)</a></td><td><div class="summary">
             Constructs the contour curves for a brep at a specified interval.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateCurvatureAnalysisMesh.htm">CreateCurvatureAnalysisMesh</a></td><td><div class="summary">
+            Create an array of analysis meshes for the brep using the specified settings.
+            Meshes aren't set on the brep.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="M_Rhino_Geometry_Brep_CreateEdgeSurface.htm">CreateEdgeSurface</a></td><td><div class="summary">
             Constructs a coons patch from 2, 3, or 4 curves.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateFilletEdges.htm">CreateFilletEdges</a></td><td><div class="summary">
@@ -181,6 +186,8 @@
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateFromSweep_2.htm">CreateFromSweep(Curve, Curve, IEnumerable<span id="LST8D93EA13_46"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST8D93EA13_46?cs=&lt;|vb=(Of |cpp=&lt;|fs=&lt;'|nu=(");</script>Curve<span id="LST8D93EA13_47"></span><script type="text/javascript">AddLanguageSpecificTextSet("LST8D93EA13_47?cs=&gt;|vb=)|cpp=&gt;|fs=&gt;|nu=)");</script>, Boolean, Double)</a></td><td><div class="summary">
             General 2 rail sweep. If you are not producing the sweep results that you are after, then
             use the SweepTwoRail class with options to generate the swept geometry
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateFromSweepInParts.htm">CreateFromSweepInParts</a></td><td><div class="summary">
+            Makes a 2 rail sweep.  Like CreateFromSweep but the result is split where parameterization along a rail changes abruptly
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateFromTaperedExtrude.htm">CreateFromTaperedExtrude(Curve, Double, Vector3d, Point3d, Double, ExtrudeCornerType)</a></td><td> <strong>Obsolete. </strong><div class="summary">
             Extrude a curve to a taper making a brep (potentially more than 1)
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateFromTaperedExtrude_1.htm">CreateFromTaperedExtrude(Curve, Double, Vector3d, Point3d, Double, ExtrudeCornerType, Double, Double)</a></td><td><div class="summary">
@@ -211,6 +218,8 @@
             Constructs a set of planar breps as outlines by the loops.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreatePlanarBreps_1.htm">CreatePlanarBreps(CurveList, Double)</a></td><td><div class="summary">
             Constructs a set of planar Breps as outlines by the loops.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateQuadSphere.htm">CreateQuadSphere</a></td><td><div class="summary">
+            Constructs a Brep definition of a quad sphere.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateShell.htm">CreateShell</a></td><td><div class="summary">
             Creates a hollowed out shell from a solid Brep. Function only operates on simple, solid, manifold Breps.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Brep_CreateSolid.htm">CreateSolid</a></td><td><div class="summary">
@@ -347,7 +356,9 @@
             No support is available for this function.
             <p>Expert user function used by MakeValidForV2 to convert trim
             curves from one surface to its NURBS form. After calling this function,
-            you need to change the surface of the face to a NurbsSurface.</p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Geometry_Brep_Repair.htm">Repair</a></td><td><div class="summary">
+            you need to change the surface of the face to a NurbsSurface.</p></div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Geometry_Brep_RemoveHoles.htm">RemoveHoles</a></td><td><div class="summary">
+            Remove all inner loops, or holes, in a Brep.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Geometry_Brep_Repair.htm">Repair</a></td><td><div class="summary">
             Fills in missing or fixes incorrect component information from a Brep. 
             Useful when reading Brep information from other file formats that do not 
             provide as complete of a Brep definition as requried by Rhino.

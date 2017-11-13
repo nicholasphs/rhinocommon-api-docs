@@ -78,7 +78,10 @@
             for instance when a renderer has completed a pass which should be
             updated in the associated viewport.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_StartRenderer.htm">StartRenderer</a></td><td><div class="summary">
-            Override to start your render engine
+            Override to start your render engine.
+            
+            Note that before using the RenderWindow you *must* call SetSize
+            to properly initialize the underlying DIB.
             </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="http://msdn2.microsoft.com/en-us/library/7bxwbwt2" target="_blank">ToString</a></td><td> (Inherited from <a href="http://msdn2.microsoft.com/en-us/library/e5kfa45b" target="_blank">Object</a>.)</td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_UnregisterDisplayModes.htm">UnregisterDisplayModes(PlugIn)</a></td><td /></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_UnregisterDisplayModes_1.htm">UnregisterDisplayModes(Assembly, Guid)</a></td><td /></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Render_RealtimeDisplayMode_UseFastDraw.htm">UseFastDraw</a></td><td><div class="summary">
             Implement and return true if you want the display pipeline to not
             wait for IsFramebufferAvailable during the MiddleGround draw phase.

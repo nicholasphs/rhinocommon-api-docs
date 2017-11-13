@@ -137,6 +137,8 @@
             May be needed in some commands for flicker free feedback.
             When set to true, the caller is responsible for cleaning up the screen
             after GetPoint.
+            </div> (Inherited from <a href="T_Rhino_Input_Custom_GetPoint.htm">GetPoint</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Input_Custom_GetPoint_EnableObjectSnapCursors.htm">EnableObjectSnapCursors</a></td><td><div class="summary">
+            Enables or disables object snap cursors. By default, object snap cursors are enabled.
             </div> (Inherited from <a href="T_Rhino_Input_Custom_GetPoint.htm">GetPoint</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Input_Custom_GetPoint_EnableSnapToCurves.htm">EnableSnapToCurves</a></td><td><div class="summary">
             If you want GetPoint() to try to snap to curves when the mouse is near a curve
             (like the center point in the Circle command when the AroundCurve option is on),
@@ -205,11 +207,18 @@
             </div> (Inherited from <a href="T_Rhino_Input_Custom_GetBaseClass.htm">GetBaseClass</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Input_Custom_GetBaseClass_Point2d.htm">Point2d</a></td><td><div class="summary">
             Returns location in view of point in selected in GetPoint::Get() or GetPoint::Get2dPoint().
             (0,0) = upper left corner of window.
-            </div> (Inherited from <a href="T_Rhino_Input_Custom_GetBaseClass.htm">GetBaseClass</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="M_Rhino_Input_Custom_GetPoint_PointOnCurve.htm">PointOnCurve</a></td><td><div class="summary">
+            </div> (Inherited from <a href="T_Rhino_Input_Custom_GetBaseClass.htm">GetBaseClass</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Input_Custom_GetPoint_PointOnBrep.htm">PointOnBrep</a></td><td><div class="summary">
+            Use to determine if point was on a Brep face. If the point was on a Brep face, 
+            then the (u,v) are the face parameters for the point.
+            </div> (Inherited from <a href="T_Rhino_Input_Custom_GetPoint.htm">GetPoint</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/CodeExample.png" alt="Code example" title="Code example" /></td><td><a href="M_Rhino_Input_Custom_GetPoint_PointOnCurve.htm">PointOnCurve</a></td><td><div class="summary">
             Use to determine is point was on a curve.
             </div> (Inherited from <a href="T_Rhino_Input_Custom_GetPoint.htm">GetPoint</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Input_Custom_GetPoint_PointOnObject.htm">PointOnObject</a></td><td><div class="summary">
             Call this function to see if the point was on an object. If the point was
             on an object an ObjRef is returned; otherwise null is returned.
+            </div> (Inherited from <a href="T_Rhino_Input_Custom_GetPoint.htm">GetPoint</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Input_Custom_GetPoint_PointOnSurface.htm">PointOnSurface</a></td><td><div class="summary">
+            Use to determine if point was on a surface. If the point was on a surface, 
+            then the (u,v) are the surface parameters for the point. The point returned
+            by Point() is the same as surface.PointAt(u,v).
             </div> (Inherited from <a href="T_Rhino_Input_Custom_GetPoint.htm">GetPoint</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Input_Custom_GetBaseClass_Rectangle2d.htm">Rectangle2d</a></td><td><div class="summary">
             Returns the location in the view of the 2d rectangle selected in GetPoint::Get2dRectangle().
             rect.left &lt; rect.right and rect.top &lt; rect.bottom

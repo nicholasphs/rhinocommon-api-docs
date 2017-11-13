@@ -155,7 +155,7 @@
             Creates a mesh by analizing the edge structure that could result from the extraction
             of edges from an original mesh.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Mesh_CreateFromPlanarBoundary.htm">CreateFromPlanarBoundary(Curve, MeshingParameters)</a></td><td> <strong>Obsolete. </strong><div class="summary">
-            Attempts to construct a mesh from a closed planar curve.RhinoMakePlanarMeshes
+            Do not use this overload. Use version that takes a tolerance parameter instead.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Mesh_CreateFromPlanarBoundary_1.htm">CreateFromPlanarBoundary(Curve, MeshingParameters, Double)</a></td><td><div class="summary">
             Attempts to construct a mesh from a closed planar curve.RhinoMakePlanarMeshes
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Mesh_CreateFromPlane.htm">CreateFromPlane</a></td><td><div class="summary">
@@ -165,6 +165,12 @@
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Mesh_CreateFromTessellation.htm">CreateFromTessellation</a></td><td><div class="summary">
             Attempts to create a mesh that is a triangulation of a list of points, projected on a plane,
             including its holes and fixed edges.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Mesh_CreateIcoSphere.htm">CreateIcoSphere</a></td><td><div class="summary">
+            Constructs a icospherical mesh. A mesh icosphere differs from a standard
+            UV mesh sphere in that it's vertices are evenly distributed. A mesh icosphere
+            starts from an icosahedron (a regular polyhedron with 20 equilateral triangles).
+            It is then refined by splitting each triangle into 4 smaller triangles.
+            This splitting can be done several times.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Geometry_Mesh_CreatePartitions.htm">CreatePartitions</a></td><td><div class="summary">
             In ancient times (or modern smartphone times), some rendering engines
             were only able to process small batches of triangles and the
@@ -172,6 +178,12 @@
             subsets of vertices and faces that those rendering engines could handle.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Mesh_CreatePatch.htm">CreatePatch</a></td><td><div class="summary">
             Construct a mesh patch from a variety of input geometry.
+            </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Mesh_CreateQuadSphere.htm">CreateQuadSphere</a></td><td><div class="summary">
+            Constructs a quad mesh sphere. A quad mesh sphere differs from a standard
+            UV mesh sphere in that it's vertices are evenly distributed. A quad mesh sphere
+            starts from a cube (a regular polyhedron with 6 square sides).
+            It is then refined by splitting each quad into 4 smaller quads.
+            This splitting can be done several times.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Mesh_CreateRefinedCatmullClarkMesh.htm">CreateRefinedCatmullClarkMesh</a></td><td><div class="summary">
             Instantiates a new mesh that represents a Catmull-Clark subdivision of the mesh.
             </div></td></tr><tr data="public;static;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /><img src="../icons/static.gif" alt="Static member" title="Static member" /></td><td><a href="M_Rhino_Geometry_Mesh_CreateRefinedLoopMesh.htm">CreateRefinedLoopMesh</a></td><td><div class="summary">
@@ -325,9 +337,10 @@
             Set lazy to false to generate texture coordinates right away.
             </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Geometry_GeometryBase_SetUserString.htm">SetUserString</a></td><td><div class="summary">
             Attach a user string (key,value combination) to this geometry.
-            </div> (Inherited from <a href="T_Rhino_Geometry_GeometryBase.htm">GeometryBase</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Geometry_Mesh_Smooth.htm">Smooth</a></td><td><div class="summary">
-            Smooths a mesh by averaging the positions of curve and surface control points 
-            and mesh vertices in a specified region.
+            </div> (Inherited from <a href="T_Rhino_Geometry_GeometryBase.htm">GeometryBase</a>.)</td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Geometry_Mesh_Smooth.htm">Smooth(Double, Boolean, Boolean, Boolean, Boolean, SmoothingCoordinateSystem)</a></td><td><div class="summary">
+            Smooths a mesh by averaging the positions of mesh vertices in a specified region.
+            </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Geometry_Mesh_Smooth_1.htm">Smooth(Double, Boolean, Boolean, Boolean, Boolean, SmoothingCoordinateSystem, Plane)</a></td><td><div class="summary">
+            Smooths a mesh by averaging the positions of mesh vertices in a specified region.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Geometry_Mesh_SolidOrientation.htm">SolidOrientation</a></td><td><div class="summary">
             Determines orientation of a "solid" mesh.
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_Geometry_Mesh_Split.htm">Split(Mesh)</a></td><td><div class="summary">
