@@ -21,7 +21,12 @@
              that implement the IWin32Windows interface, are derived from
              System.Windows.FrameworkElement or Eto.Forms.Control.  Mac Rhino
              supports controls that are derived from NSview or Eto.Forms.Control.
-             </div></td></tr><tr data="public;declared;notNetfw;SHFB_VBPI_Lbl_10D3DCCA;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Rhino_UI_ObjectPropertiesPage_PageType.htm">PageType</a></td><td><div class="summary">
+             </div></td></tr><tr data="public;declared;notNetfw;SHFB_VBPI_Lbl_10D3DCCA;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Rhino_UI_ObjectPropertiesPage_PageIconEmbeddedResourceString.htm">PageIconEmbeddedResourceString</a></td><td><div class="summary">
+            Resource string for a embedded icon resource in the assembly containing
+            the page instance.  If this returns a valid resource and Rhino can
+            load the icon the loaed icon will get used directly otherwise;
+            the PageIcon method will get called.
+            </div></td></tr><tr data="public;declared;notNetfw;SHFB_VBPI_Lbl_10D3DCCA;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Rhino_UI_ObjectPropertiesPage_PageType.htm">PageType</a></td><td><div class="summary">
             Override this and return the page you want to replace a specific object
             properties page.
             </div></td></tr><tr data="public;declared;notNetfw;SHFB_VBPI_Lbl_729729BD;SHFB_VBPI_Lbl_10D3DCCA;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Rhino_UI_ObjectPropertiesPage_SelectedObjects.htm">SelectedObjects</a></td><td><div class="summary">
@@ -57,7 +62,9 @@
             Called when the parent containers client rectangle size has changed and
             the PageControl has been resized.
             </div></td></tr><tr data="public;declared;notNetfw;SHFB_VBPI_Lbl_10D3DCCA;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_UI_ObjectPropertiesPage_PageIcon.htm">PageIcon</a></td><td><div class="summary">
-            Icon to display in the object properties tab control.
+            Icon to display in the object properties tab control.  Will not get called
+            if PageIconEmbeddedResourceString is overriden and provides a string for a 
+            successfully loaded icon resrouce.
             </div></td></tr><tr data="public;declared;notNetfw;SHFB_VBPI_Lbl_10D3DCCA;"><td><img src="../icons/pubmethod.gif" alt="Public method" title="Public method" /></td><td><a href="M_Rhino_UI_ObjectPropertiesPage_RunScript_1.htm">RunScript(ObjectPropertiesPageEventArgs)</a></td><td><div class="summary">
             This method is called when scripting the Rhino Properties command and
             choosing this page.
@@ -74,4 +81,4 @@
             Called on the active page after the selected objects list has changed
             to notify the page to initialize its content to reflect the new
             object list.
-            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Version Information</span></div><div id="ID6RBSection" class="collapsibleSection"><h4 class="subHeading">Rhino for Mac</h4>Supported in: 5.4<br /><h4 class="subHeading">Rhino for Windows</h4>Supported in: 6.3<br /></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID7RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Rhino_UI.htm">Rhino.UI Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter">Rhino 6.3.18090.00470 (Last updated: 4/3/2018)<br />Copyright © 2009-2018 Robert McNeel &amp; Associates<p><a href="https://discourse.mcneel.com/c/rhino-developer" target="_blank">Report wishes and bugs at discourse.mcneel.com</a></p> </div></body></html>
+            </div></td></tr></table><a href="#PageHeader">Top</a></div><div class="collapsibleAreaRegion"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID6RB')" onkeypress="SectionExpandCollapse_CheckKey('ID6RB', event)" tabindex="0"><img id="ID6RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Version Information</span></div><div id="ID6RBSection" class="collapsibleSection"><h4 class="subHeading">Rhino for Mac</h4>Supported in: 5.4<br /><h4 class="subHeading">Rhino for Windows</h4>Supported in: 6.4<br /></div><div class="collapsibleAreaRegion" id="seeAlsoSection"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID7RB')" onkeypress="SectionExpandCollapse_CheckKey('ID7RB', event)" tabindex="0"><img id="ID7RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />See Also</span></div><div id="ID7RBSection" class="collapsibleSection"><h4 class="subHeading">Reference</h4><div class="seeAlsoStyle"><a href="N_Rhino_UI.htm">Rhino.UI Namespace</a></div></div></div></div><div id="pageFooter" class="pageFooter">Rhino 6.4.18124.12320 (Last updated: 5/8/2018)<br />Copyright © 2009-2018 Robert McNeel &amp; Associates<p><a href="https://discourse.mcneel.com/c/rhino-developer" target="_blank">Report wishes and bugs at discourse.mcneel.com</a></p> </div></body></html>
